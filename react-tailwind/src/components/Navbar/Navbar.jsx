@@ -20,22 +20,22 @@ const Navbar = () => {
   ));
 
   return (
-    <nav className=" my-2 flex justify-between mx-10 text-black">
+    <nav className=" py-2 flex justify-between mx-10 text-black">
       <div className="flex items-center" onClick={() => setOpen(!open)}>
         {
             open ? 
-            (<IoMdCloseCircle className="md:hidden" size={30} />) : 
-                (<MdMenu size={27} className="md:hidden"/>)
+            (<IoMdCloseCircle className="lg:hidden" size={30} />) : 
+                (<MdMenu size={27} className="lg:hidden"/>)
         }
-        <ul className={`md:hidden absolute duration-1000
+        <ul className={`lg:hidden absolute duration-1000
             ${open ? "top-10" : "-top-55"}`}>
             {links}
         </ul>
 
-        <h3>My Navbar</h3>
+        <h3 className="text-2xl">My Navbar</h3>
       </div>
 
-      <ul className="hidden md:flex md:gap-6">
+      <ul className="hidden lg:flex lg:gap-6">
         {
             links
         }</ul>

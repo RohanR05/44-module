@@ -1,15 +1,22 @@
+import { Suspense } from 'react'
 import './App.css'
-import Daisynav from './components/daisyNav/Daisynav'
 import Navbar from './components/Navbar/Navbar'
+import Price from './components/Price/Price'
+
+const pricePromise = fetch('Price.json').then(res => res.json());
 
 function App() {
 
   return (
     <>
-    <header>
+    <header className='bg-gray-400'>
       <Navbar></Navbar>
-      <Daisynav></Daisynav>
     </header>
+    <main>
+      <Suspense fallback={<span className="loading loading-infinity loading-lg"></span>}>
+        <Price pricePromise={pricePromise}></Price>
+      </Suspense>
+    </main>
     </>
   )
 }

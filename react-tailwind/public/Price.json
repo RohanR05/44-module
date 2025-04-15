@@ -1,0 +1,38 @@
+[
+    {
+      "id": 1,
+      "name": "IronCore Fitness",
+      "price": "$29/month",
+      "time": "5:00 AM - 10:00 PM",
+      "features": ["Weightlifting Area", "Personal Training", "Locker Rooms"]
+    },
+    {
+      "id": 2,
+      "name": "FlexZone Gym",
+      "price": "$35/month",
+      "time": "6:00 AM - 9:00 PM",
+      "features": ["CrossFit Equipment", "Group Classes", "Free Wi-Fi"]
+    },
+    {
+      "id": 3,
+      "name": "BeastMode Barbell",
+      "price": "$40/month",
+      "time": "24/7 Access",
+      "features": ["24/7 Access", "Cardio Machines", "Nutrition Coaching"]
+    },
+    {
+      "id": 4,
+      "name": "ZenFit Studio",
+      "price": "$25/month",
+      "time": "7:00 AM - 8:00 PM",
+      "features": ["Yoga Studio", "Showers", "Steam Room"]
+    },
+    {
+      "id": 5,
+      "name": "MuscleForge Gym",
+      "price": "$45/month",
+      "time": "5:30 AM - 11:00 PM",
+      "features": ["Sauna", "Personal Training", "Parking"]
+    }
+  ]
+  
