@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import Link from "./Link";
+import { MdMenu } from "react-icons/md";
+import { IoMdCloseCircle } from "react-icons/io";
 
 const navigation = [
   { id: 1, name: "Home", path: "/" },
@@ -10,19 +12,40 @@ const navigation = [
 ];
 
 const Navbar = () => {
+
+  const [open, setOpen] = useState();
+
+  const links = navigation.map((route) => (
+    <Link key={route.id} route={route}></Link>
+  ));
+
   return (
-    <nav>
-      <ul className="flex justify-evenly">
-        {navigation.map((route) => (
-          <Link key={route.id} route={route}></Link>
-        ))}
-      </ul>
+    <nav className=" my-2 flex justify-between mx-10 text-black">
+      <div className="flex items-center" onClick={() => setOpen(!open)}>
+        {
+            open ? 
+            (<IoMdCloseCircle className="md:hidden" size={30} />) : 
+                (<MdMenu size={27} className="md:hidden"/>)
+        }
+        <ul className={`md:hidden absolute duration-1000
+            ${open ? "top-10" : "-top-55"}`}>
+            {links}
+        </ul>
+
+        <h3>My Navbar</h3>
+      </div>
+
+      <ul className="hidden md:flex md:gap-6">
+        {
+            links
+        }</ul>
 
       {/* <ul className="flex justify-evenly">
                 {
                     navigation.map(route => <li className=" "><a href={route.path}>{route.name}</a></li>)
                 }
             </ul> */}
+      <button className="btn">Sign In</button>
     </nav>
   );
 };
