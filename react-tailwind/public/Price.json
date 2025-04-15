@@ -4,21 +4,21 @@
       "name": "IronCore Fitness",
       "price": "$29/month",
       "time": "5:00 AM - 10:00 PM",
-      "features": ["Weightlifting Area", "Personal Training", "Locker Rooms"]
+      "features": [ "Personal Training", "Locker Rooms"]
     },
     {
       "id": 2,
       "name": "FlexZone Gym",
       "price": "$35/month",
       "time": "6:00 AM - 9:00 PM",
-      "features": ["CrossFit Equipment", "Group Classes", "Free Wi-Fi"]
+      "features": []
     },
     {
       "id": 3,
       "name": "BeastMode Barbell",
       "price": "$40/month",
       "time": "24/7 Access",
-      "features": ["24/7 Access", "Cardio Machines", "Nutrition Coaching"]
+      "features": ["24/7 Access","argafg","aerfgargfafgfg", "Cardio Machines", "Nutrition Coaching"]
     },
     {
       "id": 4,
